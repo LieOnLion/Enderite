@@ -12,8 +12,7 @@ body{
     background: url(img/background.png);
     background-repeat: repeat;
     background-size: 50%;
-    padding-top: 5em;
-    padding-bottom: 6.8em;
+    padding-top: 6em;
     min-height: 100vh;
 }
 .logo{
@@ -72,6 +71,7 @@ header{
 }
 .dabox{
     position: relative;
+    justify-content: center;
     padding: 3em;
     width: 100%;
     height: 17em;
@@ -131,7 +131,6 @@ header{
     transition: 0.25s;
     color: white;
 }
-
 .vids {
     position: relative;
     display: inline-block;
@@ -145,7 +144,6 @@ header{
     width: 100% !important;
     height: 100% !important;
 }
-
 @media (max-width: 1080px){
     .vids {
         margin-bottom: 1%;
@@ -156,7 +154,7 @@ header{
     }
 }
 .studios{
-    position: absolute;
+    position: sticky;
     width: 100%;
     background: black;
     padding: 0.5em;
@@ -164,7 +162,7 @@ header{
     justify-content: center;
     align-items: center;
     border-bottom: 30px solid rebeccapurple;
-    bottom: 0;
+    top: 100%;
 }
 .studios ul li{
     list-style: none;
