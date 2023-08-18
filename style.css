@@ -17,12 +17,15 @@ body{
     min-height: 100vh;
 }
 .logo{
+    scale: 1.05;
+    display: flex;
     transition: 0.5s ease-in-out
 }
 .logo:hover{
-    transform: scale(1.2);
+    scale: 1.2;
 }
 h1{
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -57,7 +60,7 @@ header{
     transition: 0.5s
 }
 .nav li:hover{
-    transform: scale(1.2);
+    scale: 1.2;
 }
 .nav li a{
     transition: color 0.5s ease;
@@ -93,6 +96,7 @@ header{
     margin-right: 3em;
     margin-bottom: 3em;
     background: rgb(205, 80, 255);
+    text-align: center;
 }
 .links{
     display: flex;
@@ -121,50 +125,34 @@ header{
     font-size: 45px;
     color: white;
 }
-.iconYT{
-    line-height: 40px;
-    transition: 0.5s;
-    font-size: 45px;
-    color: red;
-}
-.iconTW{
-    line-height: 40px;
-    transition: 0.5s;
-    font-size: 45px;
-    color: rebeccapurple;
-}
-.iconDC{
-    line-height: 40px;
-    transition: 0.5s;
-    font-size: 45px;
-    color: blue;
-}
 .text{
     font-size: 10;
     font-weight: 200;
     transition: 0.25s;
     color: white;
 }
-.vids{
-    color: rebeccapurple;
-    list-style: none;
+
+.vids {
+    position: relative;
     display: inline-block;
+    width: 48%;
+    aspect-ratio: 16/9;
 }
-@media (max-width: 670px){
+.vids iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+@media (max-width: 1080px){
     .vids {
-        margin-bottom: 2%;
+        margin-bottom: 1%;
         position: relative;
         padding-bottom: 56.25%;
-        height: 0;   
+        width: 100%;
         display: block;
-    }
-    .vids embed,
-    .vids iframe{
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100% !important;
-        height: 100% !important;
     }
 }
 .studios{
