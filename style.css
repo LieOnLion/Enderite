@@ -13,7 +13,6 @@ body{
     background-repeat: repeat;
     background-size: 50%;
     padding-top: 6em;
-    padding-bottom: 5.6em;
     min-height: 100vh;
 }
 .logo{
@@ -155,7 +154,7 @@ header{
     }
 }
 .studios{
-    position: absolute;
+    position: sticky;
     width: 100%;
     background: black;
     padding: 0.5em;
@@ -163,7 +162,7 @@ header{
     justify-content: center;
     align-items: center;
     border-bottom: 30px solid rebeccapurple;
-    bottom: 0;
+    top: 100%;
 }
 .studios ul li{
     list-style: none;
