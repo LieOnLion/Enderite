@@ -13,6 +13,7 @@ body{
     background-repeat: repeat;
     background-size: 50%;
     padding-top: 6em;
+    padding-bottom: 5.6em;
     min-height: 100vh;
 }
 .logo{
@@ -154,7 +155,7 @@ header{
     }
 }
 .studios{
-    position: sticky;
+    position: absolute;
     width: 100%;
     background: black;
     padding: 0.5em;
@@ -162,7 +163,7 @@ header{
     justify-content: center;
     align-items: center;
     border-bottom: 30px solid rebeccapurple;
-    top: 100%;
+    bottom: 0;
 }
 .studios ul li{
     list-style: none;
@@ -172,7 +173,4 @@ header{
 }
 .studios ul li span{
     color: #8700fe;
-}
-ion-icon{
-    pointer-events: none;
 }
