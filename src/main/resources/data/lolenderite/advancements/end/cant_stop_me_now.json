@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "lolenderite:obsidian_infused_enderite_pickaxe"
+    },
+    "title": {
+      "translate": "advancement.lolenderite.cant_stop_me_now"
+    },
+    "description": {
+      "translate": "advancement.lolenderite.cant_stop_me_now.desc"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "lolenderite:end/obsidian_infused_enderite",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [],
+        "items": [
+          {
+            "items": [
+              "lolenderite:obsidian_infused_enderite_pickaxe"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

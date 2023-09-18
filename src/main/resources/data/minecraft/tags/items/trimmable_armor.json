@@ -1,0 +1,9 @@
+{
+    "replace": "false",
+    "values": [
+      "lolenderite:enderite_helmet",
+      "lolenderite:enderite_chestplate",
+      "lolenderite:enderite_leggings",
+      "lolenderite:enderite_boots"
+    ]
+}

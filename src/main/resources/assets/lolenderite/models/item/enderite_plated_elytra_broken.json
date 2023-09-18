@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "lolenderite:item/enderite_plated_elytra_broken"
+  }
+}

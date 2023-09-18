@@ -1,0 +1,7 @@
+{
+	"replace": false,
+	"values": [
+		"#forge:ingots/enderite",
+		"#forge:ingots/obsidian_infused_enderite"
+	]
+}

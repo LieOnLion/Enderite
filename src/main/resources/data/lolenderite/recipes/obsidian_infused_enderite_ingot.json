@@ -1,0 +1,33 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "lolenderite:enderite_fragment"
+        },
+        {
+            "item": "lolenderite:enderite_fragment"
+        },
+        {
+            "item": "lolenderite:enderite_fragment"
+        },
+        {
+            "item": "lolenderite:enderite_fragment"
+        },
+        {
+            "item": "minecraft:popped_chorus_fruit"
+        },
+        {
+            "item": "minecraft:popped_chorus_fruit"
+        },
+        {
+            "item": "minecraft:popped_chorus_fruit"
+        },
+        {
+            "item": "minecraft:obsidian"
+        }
+    ],
+    "result": {
+        "item": "lolenderite:obsidian_infused_enderite_ingot",
+        "count": 1
+    }
+}

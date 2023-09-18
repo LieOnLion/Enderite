@@ -1,0 +1,6 @@
+{
+	"parent": "item/handheld",
+	"textures": {
+		"layer0": "lolenderite:item/obsidian_infused_enderite_axe"
+	}
+}

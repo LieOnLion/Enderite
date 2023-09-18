@@ -1,0 +1,6 @@
+{
+  "type": "forge:add_features",
+  "biomes": "#is_end",
+  "features": "lolenderite:primordial_remnants_placed",
+  "step": "underground_ores"
+}
