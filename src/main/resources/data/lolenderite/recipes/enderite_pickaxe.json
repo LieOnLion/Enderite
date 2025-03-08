@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:smithing_transform",
+    "base": {
+        "item": "minecraft:netherite_pickaxe"
+    },
+    "addition": {
+        "item": "lolenderite:enderite_ingot"
+    },
+    "result": {
+        "item": "lolenderite:enderite_pickaxe"
+    },
+    "template": {
+        "item": "lolenderite:enderite_upgrade_smithing_template"
+    }
+}

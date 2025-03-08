@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "lolenderite:enderite_hoe"
+    },
+    "title": {
+      "translate": "advancement.lolenderite.why"
+    },
+    "description": {
+      "translate": "advancement.lolenderite.why.desc"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "lolenderite:end/unstoppable",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [],
+        "items": [
+          {
+            "items": [
+              "lolenderite:enderite_hoe"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

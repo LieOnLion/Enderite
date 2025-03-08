@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "lolenderite:obsidian_infused_enderite_ingot"
+    },
+    "title": {
+      "translate": "advancement.lolenderite.obsidian_infused_enderite"
+    },
+    "description": {
+      "translate": "advancement.lolenderite.obsidian_infused_enderite.desc"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "lolenderite:end/enderite",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [],
+        "items": [
+          {
+            "items": [
+              "lolenderite:obsidian_infused_enderite_ingot"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

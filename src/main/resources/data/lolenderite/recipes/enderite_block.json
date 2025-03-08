@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "nnn",
+        "nnn",
+        "nnn"
+    ],
+    "key": {
+        "n": {
+            "item": "lolenderite:enderite_ingot"
+        }
+    },
+    "result": {
+        "item": "lolenderite:enderite_block",
+        "count": 1
+    }
+}

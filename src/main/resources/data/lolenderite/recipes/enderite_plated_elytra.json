@@ -1,0 +1,15 @@
+{
+    "type": "minecraft:smithing_transform",
+    "base": {
+        "item": "minecraft:elytra"
+    },
+    "addition": {
+        "item": "lolenderite:enderite_ingot"
+    },
+    "result": {
+        "item": "lolenderite:enderite_plated_elytra"
+    },
+    "template": {
+        "item": "lolenderite:enderite_upgrade_smithing_template"
+    }
+}

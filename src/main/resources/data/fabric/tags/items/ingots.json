@@ -1,0 +1,7 @@
+{
+	"replace": false,
+	"values": [
+		"#fabric:ingots/enderite",
+		"#fabric:ingots/obsidian_infused_enderite"
+	]
+}

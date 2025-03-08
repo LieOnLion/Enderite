@@ -1,0 +1,12 @@
+{
+    "type": "minecraft:crafting_shapeless",
+    "ingredients": [
+        {
+            "item": "lolenderite:enderite_block"
+        }
+    ],
+    "result": {
+        "item": "lolenderite:enderite_ingot",
+        "count": 9
+    }
+}

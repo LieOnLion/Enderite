@@ -1,0 +1,12 @@
+{
+  "asset_name": "enderite",
+  "description": {
+    "color": "#b05bbd",
+    "translate": "trim_material.lolenderite.enderite"
+  },
+  "ingredient": "lolenderite:enderite_ingot",
+  "item_model_index": 0.79842,
+  "override_armor_materials": {
+    "lolenderite:enderite": "enderite_darker"
+  }
+}

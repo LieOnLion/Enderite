@@ -1,0 +1,9 @@
+{
+    "type": "minecraft:blasting",
+    "ingredient": {
+        "item": "lolenderite:primordial_remnants"
+    },
+    "result": "lolenderite:enderite_fragment",
+    "experience": 1,
+    "cookingtime": 100
+}

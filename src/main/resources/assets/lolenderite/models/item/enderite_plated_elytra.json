@@ -1,0 +1,14 @@
+{
+    "parent": "item/generated",
+    "textures": {
+        "layer0": "lolenderite:item/enderite_plated_elytra"
+    },
+    "overrides": [
+        {
+            "predicate": {
+                "lolenderite:broken": 1
+            },
+            "model": "lolenderite:item/enderite_plated_elytra_broken"
+        }
+    ]
+}

@@ -1,0 +1,33 @@
+{
+  "display": {
+    "icon": {
+      "item": "lolenderite:obsidian_infused_enderite_hoe"
+    },
+    "title": {
+      "translate": "advancement.lolenderite.priorities"
+    },
+    "description": {
+      "translate": "advancement.lolenderite.priorities.desc"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "lolenderite:end/why",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "player": [],
+        "items": [
+          {
+            "items": [
+              "lolenderite:obsidian_infused_enderite_hoe"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

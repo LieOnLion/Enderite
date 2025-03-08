@@ -1,0 +1,47 @@
+{
+  "display": {
+    "icon": {
+      "item": "lolenderite:enderite_chestplate"
+    },
+    "title": {
+      "translate": "advancement.lolenderite.unstoppable"
+    },
+    "description": {
+      "translate": "advancement.lolenderite.unstoppable.desc"
+    },
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "parent": "lolenderite:end/enderite",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "lolenderite:enderite_helmet"
+            ]
+          },
+          {
+            "items": [
+              "lolenderite:enderite_chestplate"
+            ]
+          },
+          {
+            "items": [
+              "lolenderite:enderite_leggings"
+            ]
+          },
+          {
+            "items": [
+              "lolenderite:enderite_boots"
+            ]
+          }
+        ]
+      }
+    }
+  }
+}

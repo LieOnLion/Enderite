@@ -1,0 +1,6 @@
+{
+    "parent": "block/cube_all",
+    "textures": {
+        "all": "lolenderite:block/obsidian_infused_enderite_block"   
+    }
+}
