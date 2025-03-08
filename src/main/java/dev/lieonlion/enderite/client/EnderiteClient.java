@@ -10,7 +10,6 @@ import net.fabricmc.fabric.api.client.rendering.v1.LivingEntityFeatureRendererRe
 import net.minecraft.client.item.ModelPredicateProviderRegistry;
 import net.minecraft.client.network.AbstractClientPlayerEntity;
 import net.minecraft.entity.EquipmentSlot;
-import net.minecraft.util.Identifier;
 
 public class EnderiteClient implements ClientModInitializer {
     @Override
