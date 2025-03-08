@@ -23,7 +23,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 @Mixin(BeaconScreen.class)
 public abstract class BeaconScreenMixin extends HandledScreen<BeaconScreenHandler> {
     @Unique
-    private static final Identifier BEACON_CONTAINER_ENDERITE_TEXTURE = new Identifier(Enderite.MODID, "textures/gui/container/beacon.png");
+    private static final Identifier BEACON_CONTAINER_ENDERITE_TEXTURE = Enderite.asId("textures/gui/container/beacon.png");
 
     public BeaconScreenMixin(BeaconScreenHandler handler, PlayerInventory inventory, Text title) {
         super(handler, inventory, title);

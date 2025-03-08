@@ -11,14 +11,14 @@ import java.util.List;
 
 public class EnderiteSmithingTemplateItem extends SmithingTemplateItem {
 
-    private static final String TRANSLATION_KEY = Util.createTranslationKey("item", new Identifier(Enderite.MODID, "smithing_template"));
+    private static final String TRANSLATION_KEY = Util.createTranslationKey("item", Enderite.asId("smithing_template"));
     private static final Formatting TITLE_FORMATTING = Formatting.GRAY;
     private static final Formatting DESCRIPTION_FORMATTING = Formatting.BLUE;
-    private static final Text ENDERITE_UPGRADE_TEXT = Text.translatable(Util.createTranslationKey("upgrade", new Identifier(Enderite.MODID, "enderite_upgrade"))).formatted(TITLE_FORMATTING);
-    private static final Text ENDERITE_UPGRADE_APPLIES_TO_TEXT = Text.translatable(Util.createTranslationKey("item", new Identifier(Enderite.MODID, "smithing_template.enderite_upgrade.applies_to"))).formatted(DESCRIPTION_FORMATTING);
-    private static final Text ENDERITE_UPGRADE_INGREDIENTS_TEXT = Text.translatable(Util.createTranslationKey("item", new Identifier(Enderite.MODID, "smithing_template.enderite_upgrade.ingredients"))).formatted(DESCRIPTION_FORMATTING);
-    private static final Text ENDERITE_UPGRADE_BASE_SLOT_DESCRIPTION_TEXT = Text.translatable(Util.createTranslationKey("item", new Identifier(Enderite.MODID, "smithing_template.enderite_upgrade.base_slot_description")));
-    private static final Text ENDERITE_UPGRADE_ADDITIONS_SLOT_DESCRIPTION_TEXT = Text.translatable(Util.createTranslationKey("item", new Identifier(Enderite.MODID, "smithing_template.enderite_upgrade.additions_slot_description")));
+    private static final Text ENDERITE_UPGRADE_TEXT = Text.translatable(Util.createTranslationKey("upgrade", Enderite.asId("enderite_upgrade"))).formatted(TITLE_FORMATTING);
+    private static final Text ENDERITE_UPGRADE_APPLIES_TO_TEXT = Text.translatable(Util.createTranslationKey("item", Enderite.asId("smithing_template.enderite_upgrade.applies_to"))).formatted(DESCRIPTION_FORMATTING);
+    private static final Text ENDERITE_UPGRADE_INGREDIENTS_TEXT = Text.translatable(Util.createTranslationKey("item", Enderite.asId("smithing_template.enderite_upgrade.ingredients"))).formatted(DESCRIPTION_FORMATTING);
+    private static final Text ENDERITE_UPGRADE_BASE_SLOT_DESCRIPTION_TEXT = Text.translatable(Util.createTranslationKey("item", Enderite.asId("smithing_template.enderite_upgrade.base_slot_description")));
+    private static final Text ENDERITE_UPGRADE_ADDITIONS_SLOT_DESCRIPTION_TEXT = Text.translatable(Util.createTranslationKey("item", Enderite.asId("smithing_template.enderite_upgrade.additions_slot_description")));
 
     public EnderiteSmithingTemplateItem(Text appliesToText, Text ingredientsText, Text titleText, Text baseSlotDescriptionText, Text additionsSlotDescriptionText, List<Identifier> emptyBaseSlotTextures, List<Identifier> emptyAdditionsSlotTextures) {
         super(appliesToText, ingredientsText, titleText, baseSlotDescriptionText, additionsSlotDescriptionText, emptyBaseSlotTextures, emptyAdditionsSlotTextures);

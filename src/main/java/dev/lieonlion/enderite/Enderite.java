@@ -15,7 +15,7 @@ import java.util.Objects;
 
 public class Enderite implements ModInitializer {
 	public static final String MODID = "lolenderite";
-	public static final Identifier END_CITY_TREASURE_INJECTION_LOCATION = new Identifier(MODID, "inject/chests/end_city_treasure");
+	public static final Identifier END_CITY_TREASURE_INJECTION_LOCATION = Enderite.asId("inject/chests/end_city_treasure");
 
 	@Override
 	public void onInitialize() {
@@ -29,5 +29,9 @@ public class Enderite implements ModInitializer {
 				tableBuilder.pools(pools);
 			}
 		});
+	}
+
+	public static Identifier asId(String path) {
+		return new Identifier(MODID, path);
 	}
 }

@@ -89,7 +89,7 @@ public class ItemsInit {
     }
 
     private static Item registerItem(String name, Item item) {
-        return Registry.register(Registries.ITEM, new Identifier(Enderite.MODID, name), item);
+        return Registry.register(Registries.ITEM, Enderite.asId(name), item);
     }
 
     private static void addToItemGroup(RegistryKey<ItemGroup> group, Item item, Item after) {

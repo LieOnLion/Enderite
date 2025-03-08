@@ -12,7 +12,7 @@ import net.minecraft.world.gen.feature.PlacedFeature;
 
 public class OreGenerationInit {
     public static final RegistryKey<PlacedFeature> PRIMORDIAL_REMNANTS_PLACED_KEY =
-            RegistryKey.of(RegistryKeys.PLACED_FEATURE, new Identifier(Enderite.MODID, "primordial_remnants_placed"));
+            RegistryKey.of(RegistryKeys.PLACED_FEATURE, Enderite.asId("primordial_remnants_placed"));
 
     public static void generateOres() {
         BiomeModifications.addFeature(BiomeSelectors.tag(BiomeTags.IS_END),

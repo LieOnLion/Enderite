@@ -18,7 +18,7 @@ public class BlocksInit {
             new Block(FabricBlockSettings.create().mapColor(MapColor.MAGENTA).strength(75, 1400).requiresTool().sounds(BlockSoundGroup.NETHERITE)));
 
     public static Block registerBlock(String name, Block block) {
-        return Registry.register(Registries.BLOCK, new Identifier(Enderite.MODID, name), block);
+        return Registry.register(Registries.BLOCK, Enderite.asId(name), block);
     }
 
     public static void registerBlocks() {}

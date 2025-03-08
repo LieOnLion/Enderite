@@ -26,8 +26,8 @@ import net.minecraft.util.Identifier;
 
 @Environment(EnvType.CLIENT)
 public class EnderitePlatedElytraRenderer <T extends LivingEntity, M extends EntityModel<T>> extends FeatureRenderer<T, M> {
-    private static final Identifier ELYTRA = new Identifier(Enderite.MODID, "textures/entity/enderite_plated_elytra.png");
-//    private static final Identifier RECOLOUR = new Identifier(Enderite.MODID, "textures/entity/enderite_plated_elytra_recolour.png");
+    private static final Identifier ELYTRA = Enderite.asId("textures/entity/enderite_plated_elytra.png");
+//    private static final Identifier RECOLOUR = Enderite.asId("textures/entity/enderite_plated_elytra_recolour.png");
     private final ElytraEntityModel<T> elytra;
 
     public EnderitePlatedElytraRenderer(FeatureRendererContext<T, M> context, EntityModelLoader loader) {

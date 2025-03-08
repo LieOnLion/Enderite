@@ -16,7 +16,7 @@ public class EnderiteClient implements ClientModInitializer {
     @Override
     public void onInitializeClient() {
         ModelPredicateProviderRegistry.register(ItemsInit.ENDERITE_PLATED_ELYTRA.asItem(),
-                new Identifier(Enderite.MODID, "broken"),
+                Enderite.asId("broken"),
                 (itemStack, clientWorld, livingEntity, seed) -> EnderitePlatedElytraItem.isUsable(itemStack) ? 0.0F : 1.0F);
         LivingEntityFeatureRendererRegistrationCallback.EVENT
                 .register((entityType, entityRenderer, registrationHelper, context) -> {

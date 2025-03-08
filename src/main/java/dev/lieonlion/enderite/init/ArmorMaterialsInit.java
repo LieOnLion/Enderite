@@ -15,7 +15,7 @@ import java.util.EnumMap;
 import java.util.function.Supplier;
 
 public enum ArmorMaterialsInit implements ArmorMaterial {
-   ENDERITE(Enderite.MODID + ":enderite", 49, Util.make(new EnumMap(ArmorItem.Type.class), map -> {
+   ENDERITE(Enderite.asId("enderite").toString(), 49, Util.make(new EnumMap(ArmorItem.Type.class), map -> {
         map.put(ArmorItem.Type.BOOTS, 4);
         map.put(ArmorItem.Type.LEGGINGS, 7);
         map.put(ArmorItem.Type.CHESTPLATE, 9);
