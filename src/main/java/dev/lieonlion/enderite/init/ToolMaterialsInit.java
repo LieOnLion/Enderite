@@ -1,29 +1,39 @@
 package dev.lieonlion.enderite.init;
 
+import com.google.common.base.Suppliers;
+import net.minecraft.block.Block;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
-import net.minecraft.util.Lazy;
+import net.minecraft.registry.tag.BlockTags;
+import net.minecraft.registry.tag.TagKey;
 
 import java.util.function.Supplier;
 
 public enum ToolMaterialsInit implements ToolMaterial {
-    ENDERITE(5, 2401, 20.0f, 6.0f, 25, () -> Ingredient.ofItems(ItemsInit.ENDERITE_INGOT)),
-    OBSIDIAN_INFUSED_ENDERITE(5, 2771, 45.0f, 6.0f, 30, () -> Ingredient.ofItems(ItemsInit.OBSIDIAN_INFUSED_ENDERITE_INGOT));
+    ENDERITE(Tags, 2401, 20.0f, 6.0f, 25, () -> Ingredient.ofItems(ItemsInit.ENDERITE_INGOT));
+//    OBSIDIAN_INFUSED_ENDERITE(2771, 45.0f, 6.0f, 30, () -> Ingredient.ofItems(ItemsInit.OBSIDIAN_INFUSED_ENDERITE_INGOT));
 
-    private final int miningLevel;
+    private final TagKey<Block> inverseTag;
     private final int itemDurability;
     private final float miningSpeed;
     private final float attackDamage;
     private final int enchantability;
-    private final Lazy<Ingredient> repairIngredient;
+    private final Supplier<Ingredient> repairIngredient;
 
-    ToolMaterialsInit(int miningLevel, int itemDurability, float miningSpeed, float attackDamage, int enchantability, Supplier<Ingredient> repairIngredient) {
-        this.miningLevel = miningLevel;
+    private ToolMaterialsInit(
+            final TagKey<Block> inverseTag,
+            final int itemDurability,
+            final float miningSpeed,
+            final float attackDamage,
+            final int enchantability,
+            final Supplier<Ingredient> repairIngredient
+    ) {
+        this.inverseTag = inverseTag;
         this.itemDurability = itemDurability;
         this.miningSpeed = miningSpeed;
         this.attackDamage = attackDamage;
         this.enchantability = enchantability;
-        this.repairIngredient = new Lazy<Ingredient>(repairIngredient);
+        this.repairIngredient = Suppliers.memoize(repairIngredient::get);
     }
 
     @Override
@@ -42,8 +52,8 @@ public enum ToolMaterialsInit implements ToolMaterial {
     }
 
     @Override
-    public int getMiningLevel() {
-        return this.miningLevel;
+    public TagKey<Block> getInverseTag() {
+        return this.inverseTag;
     }
 
     @Override
@@ -53,6 +63,6 @@ public enum ToolMaterialsInit implements ToolMaterial {
 
     @Override
     public Ingredient getRepairIngredient() {
-        return this.repairIngredient.get();
+        return (Ingredient)this.repairIngredient.get();
     }
 }

@@ -24,37 +24,51 @@ public class ItemsInit {
             EnderiteSmithingTemplateItem.createEnderiteUpgrade());
 
     public static final Item ENDERITE_SWORD = registerItem("enderite_sword",
-            new SwordItem(ToolMaterialsInit.ENDERITE, 2, -1.9f, new Item.Settings().fireproof()));
+            new SwordItem(ToolMaterialsInit.ENDERITE, new Item.Settings().fireproof()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterialsInit.ENDERITE, 2, -1.9f))));
     public static final Item ENDERITE_SHOVEL = registerItem("enderite_shovel",
-            new ShovelItem(ToolMaterialsInit.ENDERITE, 0.5f, -2.5f, new Item.Settings().fireproof()));
+            new ShovelItem(ToolMaterialsInit.ENDERITE, new Item.Settings().fireproof()
+                    .attributeModifiers(ShovelItem.createAttributeModifiers(ToolMaterialsInit.ENDERITE, 0.5f, -2.5f))));
     public static final Item ENDERITE_PICKAXE = registerItem("enderite_pickaxe",
-            new PickaxeItem(ToolMaterialsInit.ENDERITE, 0, -2.3f, new Item.Settings().fireproof()));
+            new PickaxeItem(ToolMaterialsInit.ENDERITE, new Item.Settings().fireproof()
+                    .attributeModifiers(PickaxeItem.createAttributeModifiers(ToolMaterialsInit.ENDERITE, 0, -2.3f))));
     public static final Item ENDERITE_AXE = registerItem("enderite_axe",
-            new AxeItem(ToolMaterialsInit.ENDERITE, 4, -2.5f, new Item.Settings().fireproof()));
+            new AxeItem(ToolMaterialsInit.ENDERITE, new Item.Settings().fireproof()
+                    .attributeModifiers(AxeItem.createAttributeModifiers(ToolMaterialsInit.ENDERITE, 4, -2.5f))));
     public static final Item ENDERITE_HOE = registerItem("enderite_hoe",
-            new HoeItem(ToolMaterialsInit.ENDERITE, -6, .5f, new Item.Settings().fireproof()));
+            new HoeItem(ToolMaterialsInit.ENDERITE, new Item.Settings().fireproof()
+                    .attributeModifiers(HoeItem.createAttributeModifiers(ToolMaterialsInit.ENDERITE, -6, .5f))));
 
     public static final Item ENDERITE_HELMET = registerItem("enderite_helmet",
-            new ArmorItem(ArmorMaterialsInit.ENDERITE, ArmorItem.Type.HELMET, new Item.Settings().fireproof()));
+            new ArmorItem(ArmorMaterialsInit.ENDERITE, ArmorItem.Type.HELMET, new Item.Settings().fireproof()
+                    .maxDamage(ArmorItem.Type.HELMET.getMaxDamage(49))));
     public static final Item ENDERITE_CHESTPLATE = registerItem("enderite_chestplate",
-            new ArmorItem(ArmorMaterialsInit.ENDERITE, ArmorItem.Type.CHESTPLATE, new Item.Settings().fireproof()));
+            new ArmorItem(ArmorMaterialsInit.ENDERITE, ArmorItem.Type.CHESTPLATE, new Item.Settings().fireproof()
+                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(49))));
     public static final Item ENDERITE_LEGGINGS = registerItem("enderite_leggings",
-            new ArmorItem(ArmorMaterialsInit.ENDERITE, ArmorItem.Type.LEGGINGS, new Item.Settings().fireproof()));
+            new ArmorItem(ArmorMaterialsInit.ENDERITE, ArmorItem.Type.LEGGINGS, new Item.Settings().fireproof()
+                    .maxDamage(ArmorItem.Type.LEGGINGS.getMaxDamage(49))));
     public static final Item ENDERITE_BOOTS = registerItem("enderite_boots",
-            new ArmorItem(ArmorMaterialsInit.ENDERITE, ArmorItem.Type.BOOTS, new Item.Settings().fireproof()));
+            new ArmorItem(ArmorMaterialsInit.ENDERITE, ArmorItem.Type.BOOTS, new Item.Settings().fireproof()
+                    .maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(49))));
 
     public static final Item OBSIDIAN_INFUSED_ENDERITE_INGOT = registerItem("obsidian_infused_enderite_ingot", new Item(new Item.Settings().fireproof()));
 
     public static final Item OBSIDIAN_INFUSED_ENDERITE_SWORD = registerItem("obsidian_infused_enderite_sword",
-            new SwordItem(ToolMaterialsInit.OBSIDIAN_INFUSED_ENDERITE, 3, -1.4f, new Item.Settings().fireproof()));
+            new SwordItem(ToolMaterialsInit.OBSIDIAN_INFUSED_ENDERITE, 3, -1.4f, new Item.Settings().fireproof()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterialsInit.ENDERITE, 2, -1.9f))));
     public static final Item OBSIDIAN_INFUSED_ENDERITE_SHOVEL = registerItem("obsidian_infused_enderite_shovel",
-            new ShovelItem(ToolMaterialsInit.OBSIDIAN_INFUSED_ENDERITE, 1.5f, -2f, new Item.Settings().fireproof()));
+            new ShovelItem(ToolMaterialsInit.OBSIDIAN_INFUSED_ENDERITE, 1.5f, -2f, new Item.Settings().fireproof()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterialsInit.ENDERITE, 2, -1.9f))));
     public static final Item OBSIDIAN_INFUSED_ENDERITE_PICKAXE = registerItem("obsidian_infused_enderite_pickaxe",
-            new PickaxeItem(ToolMaterialsInit.OBSIDIAN_INFUSED_ENDERITE, 1, -1.8f, new Item.Settings().fireproof()));
+            new PickaxeItem(ToolMaterialsInit.OBSIDIAN_INFUSED_ENDERITE, 1, -1.8f, new Item.Settings().fireproof()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterialsInit.ENDERITE, 2, -1.9f))));
     public static final Item OBSIDIAN_INFUSED_ENDERITE_AXE = registerItem("obsidian_infused_enderite_axe",
-            new AxeItem(ToolMaterialsInit.OBSIDIAN_INFUSED_ENDERITE, 5, -2f, new Item.Settings().fireproof()));
+            new AxeItem(ToolMaterialsInit.OBSIDIAN_INFUSED_ENDERITE, 5, -2f, new Item.Settings().fireproof()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterialsInit.ENDERITE, 2, -1.9f))));
     public static final Item OBSIDIAN_INFUSED_ENDERITE_HOE = registerItem("obsidian_infused_enderite_hoe",
-            new HoeItem(ToolMaterialsInit.OBSIDIAN_INFUSED_ENDERITE, -6, 1f, new Item.Settings().fireproof()));
+            new HoeItem(ToolMaterialsInit.OBSIDIAN_INFUSED_ENDERITE, -6, 1f, new Item.Settings().fireproof()
+                    .attributeModifiers(SwordItem.createAttributeModifiers(ToolMaterialsInit.ENDERITE, 2, -1.9f))));
 
     public static final Item ENDERITE_PLATED_ELYTRA = registerItem("enderite_plated_elytra",
             new EnderitePlatedElytraItem(3, new Item.Settings().fireproof().maxDamage(972).rarity(Rarity.RARE)));
